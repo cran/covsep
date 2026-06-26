@@ -5,8 +5,7 @@
 \title{Compute the projection of the rescaled difference between the sample covariance
 and its separable approximation onto the separable eigenfunctions}
 \usage{
-projected_differences(Data, l1 = 1, l2 = 1,
-  with.asymptotic.variances = TRUE)
+projected_differences(Data, l1 = 1, l2 = 1, with.asymptotic.variances = TRUE)
 }
 \arguments{
 \item{Data}{a (non-empty) \code{N x d1 x d2} array of data values. The first

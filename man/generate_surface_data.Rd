@@ -28,7 +28,7 @@ Generate samples of surface data
 
 \code{gamma} can take values between 0 and 1; \code{gamma=0} corresponds to
 a separable covariance, \code{gamma=1} corresponds to a non-separable
-covariance (described in the paper \url{http://arxiv.org/abs/1505.02023}).
+covariance (described in the paper \doi{https://doi.org/10.1214/16-AOS1495}).
 Values of \code{gamma} between 0 and 1 corresponds to an interpolation between
 these two covariances
 

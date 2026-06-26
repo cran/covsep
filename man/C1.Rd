@@ -4,12 +4,14 @@
 \name{C1}
 \alias{C1}
 \title{A covariance matrix}
-\format{An object of class \code{matrix} with 32 rows and 32 columns.}
+\format{
+An object of class \code{matrix} (inherits from \code{array}) with 32 rows and 32 columns.
+}
 \usage{
 C1
 }
 \description{
-Marginal covariance matrix C1 used for simulations in the paper \url{http://arxiv.org/abs/1505.02023}
+Marginal covariance matrix C1 used for simulations in the paper \doi{https://doi.org/10.1214/16-AOS1495}
 }
 \section{Details}{
 

@@ -22,7 +22,7 @@ eigenfunctions in the second direction to be used for the test.}
 The p-value of the test for each pair \code{(l1,l2) = (L1[k], L2[k])}, for \code{k = 1:length(L1)}.
 }
 \description{
-This function performs the asymptotic test  for the separability of the covariance operator for a random surface generated from a Gaussian process (described in the paper \url{http://arxiv.org/abs/1505.02023}).
+This function performs the asymptotic test  for the separability of the covariance operator for a random surface generated from a Gaussian process (described in the paper \doi{https://doi.org/10.1214/16-AOS1495}).
 }
 \section{Details}{
 

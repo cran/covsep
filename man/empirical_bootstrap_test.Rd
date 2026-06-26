@@ -4,8 +4,14 @@
 \alias{empirical_bootstrap_test}
 \title{Projection-based empirical bootstrap test for separability of covariance structure}
 \usage{
-empirical_bootstrap_test(Data, L1 = 1, L2 = 1, studentize = "full",
-  B = 1000, verbose = TRUE)
+empirical_bootstrap_test(
+  Data,
+  L1 = 1,
+  L2 = 1,
+  studentize = "full",
+  B = 1000,
+  verbose = TRUE
+)
 }
 \arguments{
 \item{Data}{a (non-empty) \code{N x d1 x d2} array of data values. The first
@@ -31,14 +37,14 @@ The p-value of the test for each pair \code{(l1,l2) = (L1[k], L2[k])}, for \code
 \description{
 This function performs the test for the separability of covariance structure
 of a random surface based on the empirical bootstrap procedure described in
-the paper \url{http://arxiv.org/abs/1505.02023}.
+the paper \doi{https://doi.org/10.1214/16-AOS1495}.
 }
 \section{Details}{
 
 
 This function performs the test of separability 
 of the covariance structure for a random surface (introduced in the paper
-\url{http://arxiv.org/abs/1505.02023}), when generated from a Gaussian
+\doi{https://doi.org/10.1214/16-AOS1495}), when generated from a Gaussian
 process. The sample surfaces need to be measured on a common regular grid. The test
 consider a subspace formed by the tensor product of eigenfunctions of the separable
 covariances. It is possible to specify the number of eigenfunctions to be considered

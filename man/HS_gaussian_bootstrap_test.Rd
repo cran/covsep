@@ -29,7 +29,7 @@ for separability of covariance structure using Hilbert--Schmidt distance
 
 This function performs the test of separability 
 of the covariance structure for a random surface (introduced in the paper
-\url{http://arxiv.org/abs/1505.02023}), when generated from a Gaussian
+\doi{https://doi.org/10.1214/16-AOS1495}), when generated from a Gaussian
 process. The sample surfaces need to be measured on a common regular grid. The test
 considers the Hilbert--Schmidt distance between the sample covariance and its separable approximation. WE DO NOT RECOMMEND THIS TEST, as it is does not have the
 correct level, nor good power.

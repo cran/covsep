@@ -21,7 +21,7 @@
 #'
 #' @docType package
 #' @name covsep
-NULL
+"_PACKAGE"
 
 
 
@@ -96,7 +96,7 @@ rmtnorm = function(N, C1, C2, M=matrix(0, nrow(C1), nrow(C2)) ){
 #' @section Details:
 #' \code{gamma} can take values between 0 and 1; \code{gamma=0} corresponds to
 #' a separable covariance, \code{gamma=1} corresponds to a non-separable
-#' covariance (described in the paper \url{http://arxiv.org/abs/1505.02023}).
+#' covariance (described in the paper \doi{https://doi.org/10.1214/16-AOS1495}).
 #' Values of \code{gamma} between 0 and 1 corresponds to an interpolation between
 #' these two covariances
 #'
@@ -156,7 +156,7 @@ generate_surface_data  <- function(N, C1, C2, gamma, distribution='gaussian'){
 
 #' A covariance matrix
 #' 
-#' Marginal covariance matrix C1 used for simulations in the paper \url{http://arxiv.org/abs/1505.02023}
+#' Marginal covariance matrix C1 used for simulations in the paper \doi{https://doi.org/10.1214/16-AOS1495}
 #' 
 #' @section Details:
 #' This is a 32x32 real-valued covariance matrix.  
@@ -177,7 +177,7 @@ generate_surface_data  <- function(N, C1, C2, gamma, distribution='gaussian'){
 #' A covariance matrix
 #' 
 #' Marginal covariance matrix C2 used for simulations in paper
-#' \url{http://arxiv.org/abs/1505.02023}
+#' \doi{https://doi.org/10.1214/16-AOS1495}
 #' 
 #' @section Details: This is a 7x7 real-valued covariance matrix. 
 #' @examples 
@@ -358,7 +358,7 @@ projected_differences = function(Data, l1=1, l2=1, with.asymptotic.variances=TRU
 
 #' Test for separability of covariance operators for Gaussian process.
 #'
-#' This function performs the asymptotic test  for the separability of the covariance operator for a random surface generated from a Gaussian process (described in the paper \url{http://arxiv.org/abs/1505.02023}).
+#' This function performs the asymptotic test  for the separability of the covariance operator for a random surface generated from a Gaussian process (described in the paper \doi{https://doi.org/10.1214/16-AOS1495}).
 #'
 #' @inheritParams marginal_covariances
 #' @param L1 an integer or vector of integers in \eqn{1:p} indicating the
@@ -417,7 +417,7 @@ clt_test  <- function(Data, L1, L2)
 #' This function performs the test for the separability of covariance structure
 #' of a random surface generated from a Gaussian process, based on the
 #' parametric bootstrap procedure described in the paper
-#' \url{http://arxiv.org/abs/1505.02023}
+#' \doi{https://doi.org/10.1214/16-AOS1495}
 #' @inheritParams clt_test
 #' @param studentize parameter to specify which type of studentization is performed. Possible options are 'no', 'diag' or 'full' (see details section).
 #' @param B number of bootstrap replicates to be used.
@@ -427,7 +427,7 @@ clt_test  <- function(Data, L1, L2)
 #' 
 #' This function performs the test of separability 
 #' of the covariance structure for a random surface (introduced in the paper
-#' \url{http://arxiv.org/abs/1505.02023}), when generated from a Gaussian
+#' \doi{https://doi.org/10.1214/16-AOS1495}), when generated from a Gaussian
 #' process. The sample surfaces need to be measured on a common regular grid. The test
 #' consider a subspace formed by the tensor product of eigenfunctions of the separable
 #' covariances. It is possible to specify the number of eigenfunctions to be considered
@@ -539,7 +539,7 @@ gaussian_bootstrap_test  <- function(Data, L1=1, L2=2, studentize='full', B=1000
 #' 
 #' This function performs the test for the separability of covariance structure
 #' of a random surface based on the empirical bootstrap procedure described in
-#' the paper \url{http://arxiv.org/abs/1505.02023}.
+#' the paper \doi{https://doi.org/10.1214/16-AOS1495}.
 #'
 #' @inheritParams gaussian_bootstrap_test
 #'
@@ -547,7 +547,7 @@ gaussian_bootstrap_test  <- function(Data, L1=1, L2=2, studentize='full', B=1000
 #' 
 #' This function performs the test of separability 
 #' of the covariance structure for a random surface (introduced in the paper
-#' \url{http://arxiv.org/abs/1505.02023}), when generated from a Gaussian
+#' \doi{https://doi.org/10.1214/16-AOS1495}), when generated from a Gaussian
 #' process. The sample surfaces need to be measured on a common regular grid. The test
 #' consider a subspace formed by the tensor product of eigenfunctions of the separable
 #' covariances. It is possible to specify the number of eigenfunctions to be considered
@@ -676,7 +676,7 @@ difference_fullcov <- function(Data){
 #' 
 #' This function performs the test of separability 
 #' of the covariance structure for a random surface (introduced in the paper
-#' \url{http://arxiv.org/abs/1505.02023}), when generated from a Gaussian
+#' \doi{https://doi.org/10.1214/16-AOS1495}), when generated from a Gaussian
 #' process. The sample surfaces need to be measured on a common regular grid. The test
 #' considers the Hilbert--Schmidt distance between the sample covariance and its separable approximation. WE DO NOT RECOMMEND THIS TEST, as it is does not have the
 #' correct level, nor good power.
@@ -727,7 +727,7 @@ HS_gaussian_bootstrap_test  <- function(Data, B=1000, verbose=TRUE)
 #' 
 #' This function performs the test of separability 
 #' of the covariance structure for a random surface (introduced in the paper
-#' \url{http://arxiv.org/abs/1505.02023}), when generated from a Gaussian
+#' \doi{https://doi.org/10.1214/16-AOS1495}), when generated from a Gaussian
 #' process. The sample surfaces need to be measured on a common regular grid. The test
 #' considers the Hilbert--Schmidt distance between the sample covariance and its
 #' separable approximation. WE DO NOT RECOMMEND THIS TEST, as it is does not have the

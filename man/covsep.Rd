@@ -2,8 +2,8 @@
 % Please edit documentation in R/covsep.R
 \docType{package}
 \name{covsep}
-\alias{covsep}
 \alias{covsep-package}
+\alias{covsep}
 \title{covsep: tests for determining if the covariance structure of
 2-dimensional data is separable}
 \description{
@@ -26,5 +26,27 @@ The main functions are \itemize{
 \cite{Aston, John A. D.; Pigoli, Davide; Tavakoli, Shahin. Tests for
 separability in nonparametric covariance operators of random surfaces. Ann.
 Statist. 45 (2017), no. 4, 1431--1461. <doi:10.1214/16-AOS1495>.
-https://projecteuclid.org/euclid.aos/1498636862}
+<https://projecteuclid.org/euclid.aos/1498636862>}
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \doi{10.1214/16-AOS1495}
+}
+
+}
+\author{
+\strong{Maintainer}: Shahin Tavakoli \email{shahin.tavakoli@unige.ch} (\href{https://orcid.org/0000-0002-6323-6227}{ORCID})
+
+Authors:
+\itemize{
+  \item Shahin Tavakoli \email{shahin.tavakoli@unige.ch} (\href{https://orcid.org/0000-0002-6323-6227}{ORCID})
+}
+
+Other contributors:
+\itemize{
+  \item Davide Pigoli \email{davide.pigoli@kcl.ac.uk} [contributor]
+  \item John Aston \email{j.aston@statslab.cam.ac.uk} [contributor]
+}
+
 }

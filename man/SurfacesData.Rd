@@ -4,7 +4,9 @@
 \name{SurfacesData}
 \alias{SurfacesData}
 \title{A data set of surfaces}
-\format{An object of class \code{array} of dimension 50 x 32 x 7.}
+\format{
+An object of class \code{array} of dimension 50 x 32 x 7.
+}
 \usage{
 SurfacesData
 }
